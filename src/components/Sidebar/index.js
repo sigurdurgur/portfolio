@@ -2,7 +2,11 @@ import { Link, NavLink } from 'react-router-dom'
 import './index.scss';
 import LogoS from '../../assets/images/sLogo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
+import { RiHome2Line } from 'react-icons/ri';
+import { FiGithub } from 'react-icons/fi';
+import { MdPerson, MdAlternateEmail } from 'react-icons/md';
+// import { MdAlternateEmail } from 'react-icons/io'
+
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 // import LogoSubtitle from '../../assets/images/logo_sub.png'
 
@@ -18,25 +22,25 @@ const Sidebar = () => (
             exact="true" 
             activeclassName="active" 
             to="/">
-                <FontAwesomeIcon icon={faHome} color="4d4d4d" />
+                <RiHome2Line />
             </NavLink>
             <NavLink 
             exact="true" 
             activeclassName="active" 
             className="about-link" to="/about">
-                <FontAwesomeIcon icon={faUser} color="4d4d4d" />
+                <MdPerson />
             </NavLink>
             <NavLink 
             exact="true" 
             activeclassName="active" 
             className="contact-link" to="/contact">
-                <FontAwesomeIcon icon={faEnvelope} color="4d4d4d" />
+                <MdAlternateEmail />
             </NavLink>
         </nav>
         <ul>
             <li>
                 <a target="_blank" rel="noreferrer" href="https://github.com/sigurdurgur">
-                    <FontAwesomeIcon icon={faGithub} color="4d4d4e" />
+                    <FiGithub />
                 </a>
             </li>
         </ul>

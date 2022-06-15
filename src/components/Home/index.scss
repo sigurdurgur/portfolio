@@ -4,11 +4,11 @@
 
 .home-page {
     position: absolute;
-    left: 60px;
+    left: 70px;
 
     .text-zone {
         position: relative;
-        left: 10%;
+        // left: 10%;
         top: 50%;
         transform: translateY(-50%);
         width: 90%;
@@ -80,7 +80,7 @@
         white-space: nowrap;
 
         &:hover {
-            color: var(--htmltext);
+            background: var(--htmltext);
             color: white
         }
     }
