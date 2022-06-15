@@ -52,7 +52,9 @@ const Contact = () => {
               // strArray={["c", "o", "n", "t", "a", "c", "t", " ", "m", "e"]}
               strArray={['s', 'm', 's', ' ', 'm', 'e']}
               idx={15}
-            /> <FaSms />
+              
+            />
+            <FaSms className='sms' /> 
           </h1>
 
           {/* <p>

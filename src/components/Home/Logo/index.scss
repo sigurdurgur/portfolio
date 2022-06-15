@@ -1,0 +1,31 @@
+.logo-container {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20%;
+
+    z-index: -1;
+
+    svg {
+        z-index: 1;
+    }
+
+    svg path {
+        stroke-dashoffset: 210;
+        stroke-dasharray: 210;
+        animation: draw 100s forwards;
+    }
+
+    svg g {
+        fill-opacity: 0;
+
+    }
+
+    @keyframes draw {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+}

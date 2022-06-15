@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import LogoTitle from '../../assets/images/sLogo.svg'
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss' 
+import Logo from './Logo';
 // import Logo from './Logo';
 
 const Home = () => {
@@ -23,8 +24,8 @@ const Home = () => {
 
 
     return (
-    
         <div className=" container home-page">
+            <Logo />
             <div className="text-zone">
                 <h1>
                 <span className={letterClass}>h</span>
