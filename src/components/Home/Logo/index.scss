@@ -3,7 +3,7 @@
     height: 100%;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%) rotateZ(90deg);
     left: 20%;
 
     z-index: -1;
@@ -15,11 +15,12 @@
     svg path {
         stroke-dashoffset: 210;
         stroke-dasharray: 210;
-        animation: draw 50s forwards;
+        animation: draw 20s backwards;
     }
 
     svg g {
-        fill-opacity: 0;
+        fill-opacity: 0.5;
+        
 
     }
 

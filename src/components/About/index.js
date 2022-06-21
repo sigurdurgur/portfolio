@@ -1,4 +1,5 @@
 import "./index.scss";
+import { BiBandAid, BiBody, BiBrain, BiBullseye, BiDizzy, BiQuestionMark } from 'react-icons/bi';
 
 import React, { useEffect, useState } from "react";
 import AnimatedLetters from "../AnimatedLetters";
@@ -28,6 +29,31 @@ const About = () => {
           />
         </h1>
         <p>like totally good at the interweb and stuff</p>
+      </div>
+
+      <div className="cubeContainer">
+        <div className="cubeSpinner">
+          <div className="face1">
+            <BiBandAid />
+          </div>
+          <div className="face2">
+            <BiBody />
+          </div>
+          <div className="face3">
+            <BiBrain />
+          </div>
+          <div className="face4">
+            <BiBullseye />
+          </div>
+          <div className="face5">
+            <BiDizzy />
+          </div>
+          <div className="face6">
+            <BiQuestionMark />
+          </div>
+
+        </div>
+
       </div>
     </div>
   );
