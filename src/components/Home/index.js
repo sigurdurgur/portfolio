@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import LogoTitle from '../../assets/images/sLogo.svg'
+// import LogoTitle from '../../assets/images/sLogo.svg'
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss' 
 import Logo from './Logo';
@@ -25,7 +25,7 @@ const Home = () => {
 
     return (
         <div className=" container home-page">
-            <Logo />
+            {/* <Logo /> */}
             <div className="text-zone">
                 <h1>
                 <span className={letterClass}>h</span>
@@ -33,7 +33,8 @@ const Home = () => {
                 <br />
                 <span className={`${letterClass} _13`}>i</span>
                 <span className={`${letterClass} _14`}>'m</span>
-                <img src={LogoTitle} alt= 'developer' />
+                {/* <img src={LogoTitle} alt= 'developer' /> */}
+                <Logo />
                 <AnimatedLetters letterClass={letterClass}
                 strArray={nameArray}
                 idx={15} />

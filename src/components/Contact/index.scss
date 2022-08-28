@@ -2,7 +2,7 @@
   display: flex;
   font-size: 3rem;
   justify-content: center;
-  gap: 4rem;
+  gap: 5.5rem;
 
   a {
     color: black;
@@ -70,27 +70,28 @@
       background: black;
       color: white;
 
-      cursor: crosshair;
+      // cursor: crosshair;
     }
   }
 }
 
 @media screen and (max-width: 550px) {
   .contact-page {
+    height: calc(100% - 10rem);
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
 
     .links {
-      position: absolute;
-      bottom: 0.5rem;
-      left: 50%;
-      transform: translateX(-50%);
       z-index: 0;
     }
 
     h1 {
       text-align: center;
       font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-      font-size: 3rem;
+      font-size: 4rem;
     }
 
     .contact-form {
@@ -136,13 +137,17 @@
         background: white;
         letter-spacing: 3px;
         text-decoration: none;
-        padding: 1rem 2rem;
+        padding: 2rem 2rem;
         border: 1px solid;
         border-radius: 3px;
-        float: none;
+        // float: none;
         // margin-bottom: 20%;
 
         &:active {
+          background: black;
+          color: white;
+        }
+        &:hover {
           background: black;
           color: white;
         }
