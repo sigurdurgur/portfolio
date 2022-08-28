@@ -1,6 +1,19 @@
+.links {
+  display: flex;
+  font-size: 3rem;
+  justify-content: center;
+  gap: 4rem;
+
+  a {
+    color: black;
+  }
+}
+
 .contact-form {
   width: 50%;
   margin-top: 20px;
+
+  
 
   input[type="text"],
   input[type="email"] {
@@ -33,7 +46,7 @@
     outline: none;
     border-radius: 3px;
     width: 100%;
-    border: 1px solid;
+    border: 2px solid;
     height: 50px;
     font-size: 18px;
     color: #444;
@@ -67,14 +80,11 @@
     width: 100%;
 
     .links {
-      display: flex;
-      font-size: 3rem;
-      justify-content: center;
-      gap: 4rem;
-
-      a {
-        color: black;
-      }
+      position: absolute;
+      bottom: 0.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 0;
     }
 
     h1 {
@@ -91,12 +101,12 @@
       input[type="email"] {
         width: 100%;
         outline: none;
-        height: 6rem;
+        height: 30%;
         font-size: 2rem;
         color: rgb(133, 133, 133);
-        padding: 0 20px;
+        padding: 2%;
         box-sizing: border-box;
-        margin-bottom: 1rem;
+        margin-bottom: 2%;
       }
 
       .half {
@@ -113,10 +123,10 @@
         border-radius: 3px;
         width: 100%;
         border: 1px solid;
-        height: 25rem;
+        height: 15rem;
         font-size: 2rem;
         color: #444;
-        padding: 20px;
+        padding: 1rem;
         box-sizing: border-box;
         resize: none;
         margin-bottom: 1rem;
@@ -130,7 +140,7 @@
         border: 1px solid;
         border-radius: 3px;
         float: none;
-        margin-bottom: 3rem;
+        // margin-bottom: 20%;
 
         &:active {
           background: black;
