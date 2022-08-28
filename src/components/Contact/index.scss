@@ -1,81 +1,142 @@
 .contact-form {
+  width: 50%;
+  margin-top: 20px;
+
+  input[type="text"],
+  input[type="email"] {
+    // width: 50%;
+    outline: none;
+    height: 50px;
+    font-size: 18px;
+    color: rgb(133, 133, 133);
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-bottom: 3px;
+  }
+
+  .half {
+    width: 49%;
+    margin-left: 2%;
+    float: left;
+    clear: none;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  input[name="subject"] {
     width: 100%;
-    margin-top: 20px;
+  }
 
-    ul {
-        padding: 0;
-        margin: 0;
+  textarea {
+    outline: none;
+    border-radius: 3px;
+    width: 100%;
+    border: 1px solid;
+    height: 50px;
+    font-size: 18px;
+    color: #444;
+    padding: 20px;
+    min-height: 150px;
+    box-sizing: border-box;
+    resize: none;
+  }
 
-        li {
-            padding: 0;
-            margin: 0;
-            list-style: none;
-            margin-bottom: 10px;
-            overflow: hidden;
-            display: block;
-            position: relative;
-            opacity: 0;
-            animation: fadeInUp 1s 1s;
-            animation-fill-mode: forwards;
-            clear: both;
-        }
+  .flat-button {
+    background: white;
+    font: 11px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding: 8px 10px;
+    border: 1px solid;
+    border-radius: 3px;
+    float: right;
 
-        li.half {
-            width: 49%;
-            margin-left: 2%;
-            float: left;
-            clear: none;
+    &:hover {
+      background: black;
+      color: white;
 
-            &:first-child {
-                margin-left: 0;
-            }
-        }
+      cursor: crosshair;
     }
-
-    input[type="text"],
-    input[type="email"] {
-        width: 100%;
-        border: 0;
-        background: rgb(97, 186, 197);
-        height: 50px;
-        font-size: 18px;
-        color: #fff;
-        padding: 0 20px;
-        box-sizing: border-box;
-    }
-
-    textarea {
-        width: 100%;
-        border: 0;
-        background: rgb(97, 186, 197);
-        height: 50px;
-        font-size: 18px;
-        color: #444;
-        padding: 20px;
-        min-height: 150px;
-        box-sizing: border-box;
-    }
-
-    .flat-button {
-        background: white;
-        font: 11px;
-        letter-spacing: 3px;
-        text-decoration: none;
-        padding: 8px 10px;
-        border: 2px solid;
-        border-radius: 3px;
-        float: right;
-
-        &:hover {
-            background: black;
-            color: white;
-
-            cursor: crosshair;
-        }
-    }
+  }
 }
 
-.sms:hover {
-    animation: rubberBand .8s;
-    color: rgb(97, 186, 197);
+@media screen and (max-width: 550px) {
+  .contact-page {
+    width: 100%;
+
+    .links {
+      display: flex;
+      font-size: 3rem;
+      justify-content: center;
+      gap: 4rem;
+
+      a {
+        color: black;
+      }
+    }
+
+    h1 {
+      text-align: center;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      font-size: 3rem;
+    }
+
+    .contact-form {
+      padding: 1rem;
+      width: fit-content;
+
+      input[type="text"],
+      input[type="email"] {
+        width: 100%;
+        outline: none;
+        height: 6rem;
+        font-size: 2rem;
+        color: rgb(133, 133, 133);
+        padding: 0 20px;
+        box-sizing: border-box;
+        margin-bottom: 1rem;
+      }
+
+      .half {
+        width: 100%;
+        margin-left: 0;
+      }
+
+      input[name="subject"] {
+        width: 100%;
+      }
+
+      textarea {
+        outline: none;
+        border-radius: 3px;
+        width: 100%;
+        border: 1px solid;
+        height: 25rem;
+        font-size: 2rem;
+        color: #444;
+        padding: 20px;
+        box-sizing: border-box;
+        resize: none;
+        margin-bottom: 1rem;
+      }
+
+      .flat-button {
+        background: white;
+        letter-spacing: 3px;
+        text-decoration: none;
+        padding: 1rem 2rem;
+        border: 1px solid;
+        border-radius: 3px;
+        float: none;
+        margin-bottom: 3rem;
+
+        &:active {
+          background: black;
+          color: white;
+        }
+      }
+    }
+  }
 }

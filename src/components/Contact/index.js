@@ -1,34 +1,32 @@
 import "./index.scss";
 import AnimatedLetters from "../AnimatedLetters";
-import { FaSms } from "react-icons/fa";
 import React, { useEffect, useState, useRef } from "react";
-import emailjs from '@emailjs/browser';
-
+import emailjs from "@emailjs/browser";
+import { FiGithub, FiLinkedin } from "react-icons/fi";
 
 const Contact = () => {
-  const form = useRef()
+  const form = useRef();
 
   const sendEmail = (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
     emailjs
       .sendForm(
-        'service_3dsikoc',
-        'template_94m1une',
+        "service_3dsikoc",
+        "template_94m1une",
         form.current,
-        'mVa7em1MjfoOEhEQO'
+        "mVa7em1MjfoOEhEQO"
       )
       .then(
         () => {
-          alert('Message successfully sent!')
-          window.location.reload(false)
+          alert("Message successfully sent!");
+          window.location.reload(false);
         },
         () => {
-          alert('Failed to send the message, please try again')
+          alert("oops, something went wrong, please try again");
         }
-      )
-  }
-
+      );
+  };
 
   const [letterClass, setLetterClass] = useState("text-animate");
 
@@ -50,11 +48,26 @@ const Contact = () => {
             <AnimatedLetters
               letterClass={letterClass}
               // strArray={["c", "o", "n", "t", "a", "c", "t", " ", "m", "e"]}
-              strArray={['s', 'm', 's', ' ', 'm', 'e']}
+              strArray={[
+                "g",
+                "e",
+                "t",
+                " ",
+                "i",
+                "n",
+                " ",
+                "t",
+                "o",
+                "u",
+                "c",
+                "h",
+                '.',
+                '.',
+                '.',
+              ]}
               idx={15}
-              
             />
-            <FaSms className='sms' /> 
+            {/* <FaSms className='sms' />  */}
           </h1>
 
           {/* <p>
@@ -63,33 +76,53 @@ const Contact = () => {
 
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
-              <ul>
-                <li className="half">
-                  <input type="text" name="name" placeholder="Name" required />
-                </li>
-                <li className="half">
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Email"
-                    required
-                  />
-                </li>
-                <li>
-                  <input type="text" name="name" placeholder="Subject" required />
-                </li>
-                <li>
-                  <textarea
-                    placeholder="Message"
-                    name="message"
-                    required
-                  ></textarea>
-                </li>
-                <li>
-                  <input type="submit" className="flat-button" value="send" />
-                </li>
-              </ul>
+              <input
+                className="half"
+                type="text"
+                name="name"
+                placeholder="Name"
+                required
+              />
+
+              <input
+                className="half"
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+
+              <input
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                required
+              />
+
+              <textarea
+                placeholder="Message"
+                name="message"
+                required
+              ></textarea>
+
+              <input type="submit" className="flat-button" value="send" />
             </form>
+          </div>
+          <div className="links">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/sigurdurgur"
+            >
+              <FiGithub />
+            </a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://linkedin.com/in/sigurdurgur"
+            >
+              <FiLinkedin />
+            </a>
           </div>
         </div>
       </div>

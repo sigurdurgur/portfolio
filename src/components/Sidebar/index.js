@@ -30,13 +30,13 @@ const Sidebar = () => (
                 <MdAlternateEmail />
             </NavLink>
         </nav>
-        <ul>
-            <li>
+        <div className='links'>
+            
                 <a target="_blank" rel="noreferrer" href="https://github.com/sigurdurgur">
                     <FiGithub />
                 </a>
-            </li>
-        </ul>
+            
+        </div>
 
     </div>
 )

@@ -42,7 +42,7 @@ const Home = () => {
                 strArray={jobArray}
                 idx={22} />
                 </h1>
-                <h2> Wannabe Frontend Developer / Javascript Novice</h2>
+                <h2> Fullstack MERN web developer </h2>
                 <Link to="contact" className="flat-button">CONTACT ME</Link>
             </div>
               {/* <Logo />   */}
