@@ -13,8 +13,6 @@
   width: 50%;
   margin-top: 20px;
 
-  
-
   input[type="text"],
   input[type="email"] {
     // width: 50%;
@@ -62,9 +60,11 @@
     letter-spacing: 3px;
     text-decoration: none;
     padding: 8px 10px;
-    border: 1px solid;
+    border: 1px solid black;
     border-radius: 3px;
     float: right;
+
+    // -webkit-appearance: none;
 
     &:hover {
       background: black;
@@ -134,14 +134,16 @@
       }
 
       .flat-button {
-        background: white;
-        letter-spacing: 3px;
-        text-decoration: none;
-        padding: 2rem 2rem;
-        border: 1px solid;
-        border-radius: 3px;
+        // background: white;
+        // letter-spacing: 3px;
+        // text-decoration: none;
+        // padding: 2rem 2rem;
+        // border: 1px solid;
+        // border-radius: 3px;
         // float: none;
         // margin-bottom: 20%;
+        color: black;
+        -webkit-appearance: none;
 
         &:active {
           background: black;

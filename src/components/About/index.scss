@@ -6,14 +6,14 @@
   .cubeContainer {
     width: 50%;
     height: fit-content;
-    // padding-top: 25%;
+    padding-top: 25%;
   }
   
   .cubeSpinner {
     animation-name: spincube;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-duration: 200s;
+    animation-duration: 10s;
     transform-style: preserve-3d;
     // transform-origin: 100px 100px 0;
     // margin-left: calc(50% - 100px);
@@ -59,22 +59,22 @@
 @keyframes spincube {
   from,
   to {
-    transform: rotateX(-10deg) rotateY(20deg) rotateZ(30deg);
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
   }
   16% {
-    transform: rotateY(-80deg);
+    transform: rotateY(16deg);
   }
   33% {
-    transform: rotateY(-70deg) rotateZ(50deg);
+    transform: rotateY(33deg) rotateZ(0deg);
   }
   50% {
-    transform: rotateY(-150deg) rotateZ(60deg);
+    transform: rotateY(50deg) rotateZ(0deg);
   }
   66% {
-    transform: rotateY(-230deg) rotateZ(100deg);
+    transform: rotateY(66deg) rotateZ(0deg);
   }
   83% {
-    transform: rotateX(95deg);
+    transform: rotateX(0deg);
   }
 }
 
@@ -88,7 +88,7 @@
     .cubeContainer {
       width: 10%;
       height: fit-content;
-      padding-top: 0%;
+      // padding-top: 0%;
       margin: 50% 0 0 50%;
       transform: translateX(-50%);
     }

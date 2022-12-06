@@ -29,18 +29,22 @@ const About = () => {
       <div className="text-zone">
         <h1>
           <AnimatedLetters
-            letterClass={letterClass}
-            strArray={["a", "b", "o", "u", "t", " ", "m", "e"]}
-            idx={15}
+            letterClass={ letterClass }
+            strArray={ ["a", "b", "o", "u", "t", " ", "m", "e"] }
+            idx={ 15 }
           />
         </h1>
         <p>
           Full stack Web Developer who recently graduated a 1+ year intensive
           training in Fullstack Web Development (MERN stack)
         </p>
+        <div className="projects">
+          <h2>Projects</h2>
+          <a target="_blank" href="https://github.com/noiix">NÖIX</a>
+        </div>
       </div>
 
-      <div className="cubeContainer">
+      {/* <div className="cubeContainer">
         <div className="cubeSpinner">
           <div className="face1">
             <BiBandAid />
@@ -61,7 +65,7 @@ const About = () => {
             <BiQuestionMark />
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
